@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="50" viewBox="0 0 320 50">
+  <rect width="320" height="50" fill="#e5e7eb"/>
+  <rect x="6" y="6" width="308" height="38" fill="#d1d5db" rx="6"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="12" fill="#374151" font-family="Arial, Helvetica, sans-serif">320x50 Mobile Ad</text>
+</svg>
+
