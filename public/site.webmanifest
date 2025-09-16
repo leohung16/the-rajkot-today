@@ -1,0 +1,13 @@
+{
+  "name": "The Rajkot Today",
+  "short_name": "RajkotToday",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#ef4444",
+  "icons": [
+    { "src": "/logo.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
+
+

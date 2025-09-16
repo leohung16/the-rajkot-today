@@ -43,10 +43,10 @@ export default function Footer() {
             <LocaleSwitcher />
           </div>
           <div className="mt-3 text-xs opacity-90 w-full">
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-              <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-start gap-x-4 gap-y-2">
+              <div className="flex items-start gap-2 basis-full sm:basis-auto max-w-full">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
-                <span>{siteConfig.address}</span>
+                <span className="break-words leading-snug sm:leading-normal">{siteConfig.address}</span>
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M2 4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm3.2 1l6.8 5.1L19.8 5H5.2zM20 19V7.25l-8 6-8-6V19h16z"/></svg>

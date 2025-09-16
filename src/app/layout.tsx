@@ -33,6 +33,7 @@ export const metadata: Metadata = {
   },
   description: "Local Rajkot news, sports, business, entertainment and more.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://allzyapp.in"),
+  manifest: "/site.webmanifest",
   openGraph: {
     type: "website",
     title: "The Rajkot Today",
