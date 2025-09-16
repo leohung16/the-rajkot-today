@@ -11,12 +11,12 @@ export async function POST(request: Request) {
     if (contentType.includes("application/x-www-form-urlencoded")) {
       const body = await request.text();
       const params = new URLSearchParams(body);
-      username = params.get("username") || "";
-      password = params.get("password") || "";
+      username = (params.get("username") || "").trim();
+      password = (params.get("password") || "").trim();
     } else {
       const form = await request.formData();
-      username = String(form.get("username") || "");
-      password = String(form.get("password") || "");
+      username = String(form.get("username") || "").trim();
+      password = String(form.get("password") || "").trim();
     }
     
     const u = process.env.ADMIN_USERNAME || "admin";
@@ -24,7 +24,8 @@ export async function POST(request: Request) {
     
     console.log("Login attempt:", { username, password: "***", expectedUser: u });
     
-    if (username === u && password === p) {
+    // username case-insensitive match; password exact match
+    if (username.toLowerCase() === u.toLowerCase() && password === p) {
       const res = NextResponse.json({ ok: true });
       res.cookies.set(ADMIN_COOKIE, "1", { 
         httpOnly: true, 
